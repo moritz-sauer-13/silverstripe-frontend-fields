@@ -1,3 +1,5 @@
+This is a fork from hudhaifas/silverstripe-frontend-fields to support SS6
+
 ## SilverStripe Frontend Fields
 
 [![Latest Stable Version](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/v/stable)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![Total Downloads](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/downloads)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![Latest Unstable Version](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/v/unstable)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![License](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/license)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields)
@@ -51,3 +53,4 @@ This modules has used the following libraries
    [github.com]: <https://github.com/hudhaifas/silverstripe-frontend-fields/issues>
    [kartik-v/bootstrap-fileinput]: <https://github.com/kartik-v/bootstrap-fileinput>
    [webfashionist/RichText]: <https://github.com/webfashionist/RichText>
+
