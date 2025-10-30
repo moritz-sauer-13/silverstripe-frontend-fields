@@ -1,5 +1,5 @@
 {
-    "name": "hudhaifas/silverstripe-frontend-fields",
+    "name": "moritz-sauer-13/silverstripe-frontend-fields",
     "description": "Upload Image / File from Silverstripe frontend.",
     "type": "silverstripe-vendormodule",
     "homepage": "https://github.com/hudhaifas/silverstripe-frontend-fields",
@@ -15,9 +15,14 @@
         "issues": "https://github.com/hudhaifas/silverstripe-frontend-fields/issues"
     },
     "require": {
-        "silverstripe/framework": "^5",
-        "silverstripe/cms": "^5",
-        "silverstripe/vendor-plugin": "~2.0.1@stable"
+        "silverstripe/framework": "^6",
+        "silverstripe/cms": "^6",
+        "silverstripe/vendor-plugin": "^3"
+    },
+    "require-dev": {
+      "rector/rector": "^2.2",
+      "phpstan/phpstan": "^2.1",
+      "wernerkrauss/silverstripe-rector": "^1.0"
     },
     "extra": {
         "installer-name": "frontend-fields",
@@ -30,6 +35,12 @@
     "autoload": {
         "psr-4": {
             "HudhaifaS\\Forms\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
         }
     }
 }

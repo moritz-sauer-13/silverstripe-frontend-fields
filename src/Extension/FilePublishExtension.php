@@ -2,17 +2,17 @@
 
 namespace HudhaifaS\Assets\Extension;
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
 /**
  *
  * @author Hudhaifa Shatnawi <hudhaifa.shatnawi@gmail.com>
  * @version 1.0, Dec 17, 2016 - 10:29:00 PM
  */
-class FilePublishExtension
-        extends DataExtension {
+class FilePublishExtension extends Extension {
 
-    public function onAfterUpload() {
+    public $owner;
+    public function onAfterUpload(): void {
         $this->owner->publishRecursive();
     }
 

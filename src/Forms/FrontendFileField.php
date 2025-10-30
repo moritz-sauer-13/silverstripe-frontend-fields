@@ -10,8 +10,7 @@ use SilverStripe\View\Requirements;
  *
  * @author hudha
  */
-class FrontendFileField
-        extends FileField {
+class FrontendFileField extends FileField {
 
     public $fileUrl;
 
@@ -29,24 +28,25 @@ class FrontendFileField
         return parent::Field($properties);
     }
 
-    public function setValue($value, $data = null) {
+    public function setValue($value, $data = null): void {
         if ($value && !is_array($value)) {
             $this->fileUrl = $value->Link();
         }
+        
         parent::setValue($value, $data);
     }
 
-    public static function init_scripts() {
+    public static function init_scripts(): void {
         // styles for this field
-        Requirements::css('hudhaifas/silverstripe-frontend-fields: res/css/vendor/fileinput.css');
-        Requirements::css('hudhaifas/silverstripe-frontend-fields: res/css/imagefield.css');
+        Requirements::css('moritz-sauer-13/silverstripe-frontend-fields: res/css/vendor/fileinput.css');
+        Requirements::css('moritz-sauer-13/silverstripe-frontend-fields: res/css/imagefield.css');
 
         // init script for this field
         Requirements::javascript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js');
-        Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/vendor/fileinput.js');
+        Requirements::javascript('moritz-sauer-13/silverstripe-frontend-fields: res/js/vendor/fileinput.js');
 //        Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/vendor/locales/ar.js');
 
-        Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/filefield.js');
+        Requirements::javascript('moritz-sauer-13/silverstripe-frontend-fields: res/js/filefield.js');
     }
 
 }

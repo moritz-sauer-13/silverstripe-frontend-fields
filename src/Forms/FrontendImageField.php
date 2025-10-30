@@ -7,8 +7,7 @@ namespace HudhaifaS\Forms;
  * @author Hudhaifa Shatnawi <hudhaifa.shatnawi@gmail.com>
  * @version 1.0, Apr 20, 2018 - 5:38:24 PM
  */
-class FrontendImageField
-        extends FrontendFileField {
+class FrontendImageField extends FrontendFileField {
 
     /**
      * @var array Collection of extensions.

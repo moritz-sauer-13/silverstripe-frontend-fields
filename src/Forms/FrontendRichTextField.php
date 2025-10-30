@@ -10,10 +10,9 @@ use SilverStripe\View\Requirements;
  * @author Hudhaifa Shatnawi <hudhaifa.shatnawi@gmail.com>
  * @version 1.0, Jul 6, 2018 - 5:53:22 AM
  */
-class FrontendRichTextField
-        extends TextareaField {
+class FrontendRichTextField extends TextareaField {
 
-    private static $casting = [
+    private static array $casting = [
         'Value' => 'HTMLText',
     ];
 
@@ -23,12 +22,12 @@ class FrontendRichTextField
         return parent::Field($properties);
     }
 
-    public static function init_scripts() {
+    public static function init_scripts(): void {
         // styles for this field
-        Requirements::css('hudhaifas/silverstripe-frontend-fields: res/css/vendor/richtext.min.css');
+        Requirements::css('moritz-sauer-13/silverstripe-frontend-fields: res/css/vendor/richtext.min.css');
 
         // init script for this field
-        Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/vendor/jquery.richtext.js');
+        Requirements::javascript('moritz-sauer-13/silverstripe-frontend-fields: res/js/vendor/jquery.richtext.js');
     }
 
 }
